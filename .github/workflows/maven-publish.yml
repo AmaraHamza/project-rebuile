@@ -37,6 +37,9 @@ jobs:
   publish-job:
       needs: build_test
       runs-on: ubuntu-latest
+      defaults:
+        run:
+          working-directory: project-rebuild
       steps:
         - uses: actions/checkout@v4
         - name: Set up JDK 21
