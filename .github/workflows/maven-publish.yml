@@ -55,6 +55,5 @@ jobs:
           with:
             name: Package
             path: staging/
-            overwrite: true
         - name: List downloaded artifacts
           run: ls -la staging/
